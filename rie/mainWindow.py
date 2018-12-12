@@ -56,10 +56,12 @@ class MainWindow:
         settings_window.Layout(settings_layout)
 
         settings_event, settings_value = settings_window.Read()
+        if settings_event is None:
+            settings_window.Close()
+        else:
+            self.save_settings(settings_value)
 
-        self.save_settings(settings_value)
 
-        settings_window.Close()
 
     def retrieve_settings(self):
         with open(self.settings_file) as file:

@@ -5,7 +5,7 @@ from multiprocessing import Process
 
 class ResizeImage:
     def __init__(self, width, height, path, zipped=False):
-        self.valid_formats = ['jpg', 'png', 'mp4']
+        self.valid_formats = ['jpg', 'png', 'mp4', 'PNG']
         self.batch_size, self.zip_location, self.zip_name = self.read_from_settings()
         self.width = width
         self.height = height
