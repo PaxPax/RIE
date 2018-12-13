@@ -1,5 +1,6 @@
 rie/resized_folder/
 rie/settings/
-rie/images/
+rie/__pycache__/
+images/
 .idea/__pycache__/
 .idea/
